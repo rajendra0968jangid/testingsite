@@ -1,0 +1,699 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Tags -->
+  <title>Practice Lab & Machines | Interactive Linux & Cloud Notes | AiCodeCenter</title>
+  <meta name="description" content="Access AiCodeCenter Practice Lab Machines: Operating System & Linux OST Notes, AWS Cloud Computing Notes, and Cyber Security Practice Labs. Run commands in the live web terminal and code playground.">
+  <meta name="keywords" content="practice lab, practice machines, linux notes, OST notes, operating systems, cloud notes, cyber security lab, online terminal, Rajendra Jangid, AiCodeCenter">
+  <meta name="author" content="AiCodeCenter Technologies">
+  
+  <!-- Open Graph / Social Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Practice Lab & Machines | AiCodeCenter Technologies">
+  <meta property="og:description" content="Hands-on practice machines, Operating System OST notes, and live terminal sandbox.">
+  <meta property="og:image" content="assets/hero-workspace.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon-96x96.png">
+  <link rel="apple-touch-icon" href="assets/favicon-96x96.png">
+  
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/index.css">
+  
+  <!-- Instant Theme Initializer -->
+  <script>
+    (function() {
+      const saved = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved ? saved : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <span class="top-bar-badge">Live Sandbox</span>
+      <span>⚡ Linux Terminal Node is Online! Practice essential shell commands and inspect OS notes in your browser.</span>
+      <a href="#terminalSection" class="top-bar-link">Launch Terminal &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-wrapper" aria-label="AiCodeCenter Technologies Home">
+        <img src="assets/logo.png" alt="AiCodeCenter Technologies Logo" class="logo-img logo-light">
+        <img src="assets/logo-dark.png" alt="AiCodeCenter Technologies Logo" class="logo-img logo-dark">
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="internships.html" class="nav-link">Internships</a></li>
+          <li><a href="training.html" class="nav-link">Training</a></li>
+          <li><a href="practice-lab.html" class="nav-link active">Practice Lab</a></li>
+          <li><a href="about-us.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="btn btn-primary open-apply-modal" id="headerApplyBtn" data-domain="Practice Lab Access">
+          Get Lab Access
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Practice Lab</span>
+      </div>
+      <div class="hero-pill" style="margin: 0 auto 18px; display: inline-flex;">
+        <span class="hero-pill-dot" style="background: #10B981;"></span>
+        <span>Hands-On Engineering Sandboxes</span>
+      </div>
+      <h1 class="page-hero-title">
+        Practice Machines & <span class="highlight">Interactive Labs</span>
+      </h1>
+      <p class="page-hero-desc">
+        Turn technical theory into real-world engineering capability. Experiment with Linux command-line tools, operating system architecture, live web components, and cloud concepts directly in your browser.
+      </p>
+
+      <!-- Machine Filter Tabs -->
+      <div class="filter-bar">
+        <button class="filter-btn lab-filter-btn active" data-filter="all">All Environments</button>
+        <button class="filter-btn lab-filter-btn" data-filter="active">🟢 Active Now</button>
+        <button class="filter-btn lab-filter-btn" data-filter="os">OS & Linux</button>
+        <button class="filter-btn lab-filter-btn" data-filter="cloud">Cloud Computing</button>
+        <button class="filter-btn lab-filter-btn" data-filter="security">Cyber Security</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Machines Grid Section (Matching aicodecenter.com/product.html) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Clusters</span>
+        <h2 class="section-title">Curated Practice Environments</h2>
+        <p class="section-subtitle">
+          Designed and maintained by Linux system architect <a href="https://www.linkedin.com/in/rajendra0968jangid/" target="_blank" rel="noopener noreferrer" style="color:var(--primary); font-weight:600; text-decoration:underline;">Rajendra Jangid</a> and the AiCodeCenter Engineering Team.
+        </p>
+      </div>
+
+      <div class="lab-machines-grid">
+
+        <!-- Machine 1: OST Notes (ACTIVE) -->
+        <div class="machine-card active-machine" data-category="os" data-status="active">
+          <div class="machine-header">
+            <span class="machine-status-badge status-active">
+              <span class="status-dot pulse"></span>
+              ACTIVE
+            </span>
+            <span style="font-size: 12px; font-weight: 700; color: #10B981;">Ubuntu 24.04 LTS</span>
+          </div>
+          <h3 class="machine-title">OST Linux & System Administration</h3>
+          <p class="machine-desc">
+            Deepen your understanding of Linux internals, core shell navigation, user privileges (chmod/chown), process scheduling, and background systemd services.
+          </p>
+          <div class="machine-specs">
+            <div class="spec-item">
+              <span class="spec-key">Environment</span>
+              <span class="spec-val">Bash / Linux Pod</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-key">Interface</span>
+              <span class="spec-val">Interactive Web Shell</span>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px; margin-top: auto;">
+            <a href="#terminalSection" class="btn btn-primary btn-sm" style="flex: 1; justify-content: center;">
+              Launch Terminal &rarr;
+            </a>
+            <button class="btn btn-secondary btn-sm open-apply-modal" data-domain="OST Linux Notes Download">
+              Get OST Guide
+            </button>
+          </div>
+        </div>
+
+        <!-- Machine 2: Cloud Notes (IN-ACTIVE) -->
+        <div class="machine-card inactive-machine" data-category="cloud" data-status="inactive">
+          <div class="machine-header">
+            <span class="machine-status-badge status-inactive">
+              <span class="status-dot"></span>
+              COHORT ONLY
+            </span>
+            <span style="font-size: 12px; font-weight: 600; color: var(--text-subtle);">AWS Cloud Sandbox</span>
+          </div>
+          <h3 class="machine-title">AWS Cloud Architecture & DevOps</h3>
+          <p class="machine-desc">
+            Hands-on cloud engineering: VPC subnet isolation, EC2 server configuration, S3 bucket lifecycle policies, Docker containerization, and AWS Lambda serverless workflows.
+          </p>
+          <div class="machine-specs">
+            <div class="spec-item">
+              <span class="spec-key">Platform</span>
+              <span class="spec-val">Amazon Web Services</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-key">Access</span>
+              <span class="spec-val">Reserved for Next Cohort</span>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px; margin-top: auto;">
+            <button class="btn btn-secondary btn-sm open-apply-modal" data-domain="Cloud AWS Notes Access" style="width: 100%;">
+              Notify When Active
+            </button>
+          </div>
+        </div>
+
+        <!-- Machine 3: Cyber Security Notes (IN-ACTIVE) -->
+        <div class="machine-card inactive-machine" data-category="security" data-status="inactive">
+          <div class="machine-header">
+            <span class="machine-status-badge status-inactive">
+              <span class="status-dot"></span>
+              COHORT ONLY
+            </span>
+            <span style="font-size: 12px; font-weight: 600; color: var(--text-subtle);">Kali Linux Suite</span>
+          </div>
+          <h3 class="machine-title">Cyber Security & Network Defense</h3>
+          <p class="machine-desc">
+            Practical penetration testing and security fundamentals: Nmap reconnaissance, Wireshark packet capture, OWASP Top 10 web vulnerabilities, and firewall configuration.
+          </p>
+          <div class="machine-specs">
+            <div class="spec-item">
+              <span class="spec-key">Security Stack</span>
+              <span class="spec-val">Kali Linux & Security Tools</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-key">Access</span>
+              <span class="spec-val">Enrolled Students Only</span>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px; margin-top: auto;">
+            <button class="btn btn-secondary btn-sm open-apply-modal" data-domain="Cyber Security Notes Access" style="width: 100%;">
+              Request Cohort Access
+            </button>
+          </div>
+        </div>
+
+        <!-- Machine 4: Web Live Playground (ACTIVE) -->
+        <div class="machine-card active-machine" data-category="os" data-status="active">
+          <div class="machine-header">
+            <span class="machine-status-badge status-active">
+              <span class="status-dot pulse"></span>
+              ACTIVE
+            </span>
+            <span style="font-size: 12px; font-weight: 700; color: #10B981;">Frontend Sandbox</span>
+          </div>
+          <h3 class="machine-title">Web Frontend Playground</h3>
+          <p class="machine-desc">
+            An instant in-browser sandbox for building and debugging frontend components. Test HTML5 semantics, modern CSS Flexbox and Grid, and interactive JavaScript in real time.
+          </p>
+          <div class="machine-specs">
+            <div class="spec-item">
+              <span class="spec-key">Engine</span>
+              <span class="spec-val">Browser DOM Sandbox</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-key">Execution</span>
+              <span class="spec-val">Zero-Latency Instant Run</span>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px; margin-top: auto;">
+            <a href="#playgroundSection" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center;">
+              Open Code Playground &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Machine 5: Python Automation Runner (ACTIVE) -->
+        <div class="machine-card active-machine" data-category="os" data-status="active">
+          <div class="machine-header">
+            <span class="machine-status-badge status-active">
+              <span class="status-dot pulse"></span>
+              ACTIVE
+            </span>
+            <span style="font-size: 12px; font-weight: 700; color: #10B981;">Python 3.12</span>
+          </div>
+          <h3 class="machine-title">Python Logic & Automation Runner</h3>
+          <p class="machine-desc">
+            Run and debug Python scripts without any local environment setup. Practice algorithms, data structures, string manipulation, JSON parsing, and automation scripts.
+          </p>
+          <div class="machine-specs">
+            <div class="spec-item">
+              <span class="spec-key">Interpreter</span>
+              <span class="spec-val">Python 3.12 Standard</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-key">Libraries</span>
+              <span class="spec-val">Requests, JSON, Math</span>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px; margin-top: auto;">
+            <a href="#terminalSection" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center;">
+              Run in Terminal &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Machine 6: Database & SQL Sandbox (ACTIVE) -->
+        <div class="machine-card active-machine" data-category="cloud" data-status="active">
+          <div class="machine-header">
+            <span class="machine-status-badge status-active">
+              <span class="status-dot pulse"></span>
+              ACTIVE
+            </span>
+            <span style="font-size: 12px; font-weight: 700; color: #10B981;">SQL Pod</span>
+          </div>
+          <h3 class="machine-title">Relational SQL & Database Notes</h3>
+          <p class="machine-desc">
+            Master relational schema design and complex queries. Study table relationships, primary and foreign keys, multi-table JOINs, indexing strategies, and database normalization.
+          </p>
+          <div class="machine-specs">
+            <div class="spec-item">
+              <span class="spec-key">Dialect</span>
+              <span class="spec-val">PostgreSQL / SQLite</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-key">Cheatsheet</span>
+              <span class="spec-val">Full Guide Included</span>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px; margin-top: auto;">
+            <button class="btn btn-secondary btn-sm open-apply-modal" data-domain="Database SQL Notes" style="width: 100%;">
+              Get SQL Cheat Sheet
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Live Web Terminal Simulator -->
+      <div id="terminalSection" class="terminal-container">
+        <div class="terminal-titlebar">
+          <div class="terminal-controls">
+            <span class="t-btn red"></span>
+            <span class="t-btn yellow"></span>
+            <span class="t-btn green"></span>
+          </div>
+          <div class="terminal-title">student@aicodecenter-lab:~ (bash) — 🟢 Machine 01 Active</div>
+          <div style="font-size: 11px; color: #10B981; font-weight: 600;">ACTIVE NODE</div>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <div style="color: #38BDF8; font-weight: 600; margin-bottom: 6px;">
+            AiCodeCenter Technologies Interactive Lab Shell [v2.4.0-cloud]
+          </div>
+          <div style="color: #94A3B8; margin-bottom: 12px;">
+            Type <strong style="color: #38BDF8;">help</strong> to see available commands, or try <strong style="color: #38BDF8;">ls</strong>, <strong style="color: #38BDF8;">cat notes.txt</strong>, <strong style="color: #38BDF8;">status</strong>, or <strong style="color: #38BDF8;">whoami</strong>.
+          </div>
+          
+          <div class="terminal-input-row">
+            <span class="terminal-prompt">student@aicodecenter-lab:~$</span>
+            <input type="text" id="terminalInput" class="terminal-input" placeholder="Type 'help' and press Enter..." autocomplete="off" spellcheck="false">
+          </div>
+          
+          <div class="terminal-hint">
+            💡 <strong>Quick Command:</strong> Press <code>Enter</code> to execute. Try <code>cat notes.txt</code> to read core Linux & OS revision notes, or <code>status</code> to check active cluster nodes.
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Code Runner Playground Section -->
+      <div id="playgroundSection" class="playground-container">
+        <div class="playground-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 1.2rem;">⚡</span>
+            <div>
+              <strong style="font-size: 14.5px;">Interactive Web Code Playground</strong>
+              <div style="font-size: 12px; color: var(--text-muted);">Edit HTML, CSS, and JavaScript in the left editor and click "Run Code" to view immediate live results.</div>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-sm" id="runCodeBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Run Code
+          </button>
+        </div>
+
+        <div class="playground-grid">
+          <div class="code-editor-area">
+            <div style="font-size: 11.5px; font-weight: 700; color: #64748B; text-transform: uppercase; margin-bottom: 8px;">
+              Source Editor (HTML + CSS + JS)
+            </div>
+            <textarea id="codeEditor" class="code-textarea" spellcheck="false"><!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .badge {
+      background: #4f46e5;
+      padding: 6px 14px;
+      border-radius: 99px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    h2 { margin: 12px 0 6px; }
+    p { color: #94a3b8; font-size: 14px; }
+    button {
+      background: #10b981;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+    button:hover { background: #059669; }
+  </style>
+</head>
+<body>
+  <div class="badge">AiCodeCenter Lab Sandbox</div>
+  <h2>Welcome to Practice Lab!</h2>
+  <p>Live frontend demonstration compiled inside your browser sandbox.</p>
+  <button onclick="alert('⚡ Interactive sandbox working perfectly!')">Click Me!</button>
+</body>
+</html></textarea>
+          </div>
+
+          <div class="code-preview-area">
+            <span class="preview-label">Live Output Window</span>
+            <iframe id="codePreview" class="preview-frame" sandbox="allow-scripts allow-modals"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- OST Linux & Cloud Study Notes Blueprint -->
+      <div style="margin-top: 60px;">
+        <div class="section-header">
+          <span class="section-tag">Essential Systems Knowledge</span>
+          <h2 class="section-title">OST Notes: Operating Systems & Core Architecture</h2>
+          <p class="section-subtitle">
+            Curated architectural blueprints, operating system mechanisms, and Linux commands essential for software, DevOps, and cloud engineers.
+          </p>
+        </div>
+
+        <div class="why-choose-list" style="margin-top: 24px;">
+          <!-- Topic 1 -->
+          <div class="why-choose-item">
+            <h4>
+              <span style="color:#4F46E5;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </span>
+              1. Kernel vs User Space & System Calls
+            </h4>
+            <p style="margin-bottom: 8px;">
+              Modern operating systems enforce memory and hardware protection through dual CPU modes: <strong>Ring 0 (Kernel Mode)</strong> with direct hardware access and <strong>Ring 3 (User Space)</strong> for application binaries. User programs safely request privileged OS services via software interrupts known as System Calls.
+            </p>
+            <div style="background: var(--bg-subtle); padding: 8px 12px; border-radius: var(--radius-sm); font-family: monospace; font-size: 12px; color: var(--text-main);">
+              Key Syscalls: fork() | execve() | open() | read() | write() | waitpid()
+            </div>
+          </div>
+
+          <!-- Topic 2 -->
+          <div class="why-choose-item">
+            <h4>
+              <span style="color:#0284C7;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>
+              2. Process Lifecycle & CPU Scheduling
+            </h4>
+            <p style="margin-bottom: 8px;">
+              Processes cycle through distinct states: <em>Ready &rarr; Running &rarr; Blocked/Waiting &rarr; Terminated</em>. The Linux Completely Fair Scheduler (CFS) allocates CPU time slices using Red-Black trees based on process "nice" priority values (ranging from -20 highest priority to +19 lowest priority).
+            </p>
+            <div style="background: var(--bg-subtle); padding: 8px 12px; border-radius: var(--radius-sm); font-family: monospace; font-size: 12px; color: var(--text-main);">
+              Commands: ps aux --sort=-%cpu | top | nice -n 5 cmd | kill -9 &lt;PID&gt;
+            </div>
+          </div>
+
+          <!-- Topic 3 -->
+          <div class="why-choose-item">
+            <h4>
+              <span style="color:#10B981;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </span>
+              3. POSIX Permissions & Access Security
+            </h4>
+            <p style="margin-bottom: 8px;">
+              Linux implements granular security using three privilege levels: Owner (u), Group (g), and Others (o), calculated with octal weights for Read (4), Write (2), and Execute (1). Special permission bits (SUID, SGID, Sticky Bit) safeguard sensitive binaries and shared directories.
+            </p>
+            <div style="background: var(--bg-subtle); padding: 8px 12px; border-radius: var(--radius-sm); font-family: monospace; font-size: 12px; color: var(--text-main);">
+              Commands: chmod 755 app.sh | chown -R www-data:www-data /var/www | umask 022
+            </div>
+          </div>
+
+          <!-- Topic 4 -->
+          <div class="why-choose-item">
+            <h4>
+              <span style="color:#D97706;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+              </span>
+              4. Streams, Pipelines & Text Processing
+            </h4>
+            <p style="margin-bottom: 8px;">
+              The Unix philosophy connects simple utilities into versatile pipelines using standard data streams: Standard Input (stdin: 0), Standard Output (stdout: 1), and Standard Error (stderr: 2). Efficiently inspect, search, and parse gigabytes of server logs in milliseconds without memory overhead.
+            </p>
+            <div style="background: var(--bg-subtle); padding: 8px 12px; border-radius: var(--radius-sm); font-family: monospace; font-size: 12px; color: var(--text-main);">
+              Commands: grep -rnI "ERROR" /var/log/ | awk '{print $1, $5}' | sort | uniq -c
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lab Mentor Bio & Attribution (Matching aicodecenter.com) -->
+  <section class="section section-subtle">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 36px; box-shadow: var(--shadow-sm); display: flex; align-items: center; gap: 28px; flex-wrap: wrap;">
+        <img src="assets/student1.jpg" alt="Rajendra Jangid" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary);">
+        <div style="flex: 1; min-width: 260px;">
+          <span class="section-tag">Practice Lab Curator</span>
+          <h3 style="font-size: 1.45rem; margin-bottom: 6px;">Rajendra Jangid</h3>
+          <p style="font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 12px;">
+            Linux System Architect & Cloud Infrastructure Mentor at AiCodeCenter Technologies. Dedicated to helping students bridge the gap between academic theory and industry engineering through hands-on terminal practice, containerization, and production debugging.
+          </p>
+          <a href="https://www.linkedin.com/in/rajendra0968jangid/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="display: inline-flex; align-items: center; gap: 6px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            Connect on LinkedIn &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2 class="cta-title">Want Full Access to All Dedicated Cloud Machines?</h2>
+        <p class="cta-desc">
+          Enroll in any AiCodeCenter internship or training track to unlock dedicated cloud sandbox pods, private GitHub repositories, automated code reviews, and direct mentor support.
+        </p>
+        <div class="cta-actions">
+          <button class="btn btn-white btn-lg open-apply-modal" data-domain="Practice Lab Pro Access">
+            Request Pro Lab Key
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <a href="training.html" class="btn btn-glass btn-lg">
+            Explore Training Tracks
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-wrap">
+            <img src="assets/logo-dark.png" alt="AiCodeCenter Logo" class="logo-img">
+          </a>
+          <p>
+            AiCodeCenter Technologies bridges academic education and industry careers with live project internships, training, and real-world software labs.
+          </p>
+          <div class="social-links">
+            <a href="https://x.com/aicodecenter" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/aicodecenter/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@Aicodecenter" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="internships.html">Internship Tracks</a></li>
+            <li><a href="training.html">Training Programs</a></li>
+            <li><a href="practice-lab.html">Practice Lab</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Practice Pods</h4>
+          <ul class="footer-links">
+            <li><a href="#terminalSection">OST Linux Notes (ACTIVE)</a></li>
+            <li><a href="#playgroundSection">Web Code Runner</a></li>
+            <li><a href="#terminalSection">Python Automation Pod</a></li>
+            <li><a href="practice-lab.html">AWS Cloud Computing</a></li>
+            <li><a href="practice-lab.html">Cyber Security Lab</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Helpline</h4>
+          <ul class="contact-info-list">
+            <li>
+              <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 8529172898</span>
+            </li>
+            <li>
+              <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>info.aicodecenter@gmail.com</span>
+            </li>
+            <li>
+              <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>AiCodeCenter Technologies, IT Innovations Park</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2025 AiCodeCenter Technologies. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Widget -->
+  <div class="whatsapp-widget">
+    <div class="whatsapp-tooltip">Chat with Admissions</div>
+    <a href="https://wa.me/918529172898?text=Hello%20AiCodeCenter%2C%20I%20am%20interested%20in%20Practice%20Lab%20machines." target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Contact via WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.97.53 1.961.815 2.796.815 3.183 0 5.768-2.587 5.769-5.766.001-3.182-2.585-5.768-5.769-5.768zm7.421 5.828c-.002 4.148-3.376 7.521-7.523 7.521-.004 0-.007 0-.011 0-1.309 0-2.593-.353-3.714-1.021l-4.137 1.085 1.105-4.035c-.736-1.168-1.125-2.52-1.125-3.914.002-4.148 3.376-7.521 7.524-7.521 4.146 0 7.52 3.373 7.521 7.521zm2.399-.001c-.003-5.467-4.449-9.914-9.92-9.914-5.47 0-9.916 4.447-9.919 9.914-.002 1.748.457 3.456 1.328 4.965l-1.41 5.151 5.272-1.382c1.458.796 3.104 1.216 4.78 1.216h.004c5.469 0 9.916-4.446 9.918-9.914z"/></svg>
+    </a>
+  </div>
+
+  <!-- Interactive Application Modal -->
+  <div class="modal-overlay" id="applicationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close dialog">&times;</button>
+      
+      <div class="modal-header">
+        <span class="section-tag">Lab Pass Request</span>
+        <h3 id="modalTitle">Request Student Lab Credentials</h3>
+        <p>Submit your details to receive your personalized sandbox credentials and downloadable OST study blueprints.</p>
+      </div>
+
+      <form id="applyForm">
+        <div class="form-group">
+          <label class="form-label" for="applicantName">Full Name *</label>
+          <input type="text" id="applicantName" class="form-input" placeholder="e.g. Rahul Sharma" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="applicantEmail">Email Address *</label>
+            <input type="email" id="applicantEmail" class="form-input" placeholder="rahul@example.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="applicantPhone">Phone / WhatsApp *</label>
+            <input type="tel" id="applicantPhone" class="form-input" placeholder="+91 85291 72898" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalDomainSelect">Select Practice Track *</label>
+          <select id="modalDomainSelect" class="form-select" required>
+            <option value="OST Linux Notes Download">OST Linux & System Administration (ACTIVE)</option>
+            <option value="Web Code Runner Sandbox">Web Frontend Playground (ACTIVE)</option>
+            <option value="Python Script Runner">Python Automation Pod (ACTIVE)</option>
+            <option value="Cloud AWS Notes Access">AWS Cloud Architecture & DevOps</option>
+            <option value="Cyber Security Notes Access">Cyber Security & Network Defense</option>
+            <option value="Database SQL Notes">Relational SQL & Database Lab</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+          Request Student Lab Pass
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toastNotification" role="alert">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+    <span class="toast-text">Lab access request received successfully!</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 50" width="250" height="50" fill="none">
+  <defs>
+    <!-- Background Gradient for Icon Mark -->
+    <linearGradient id="aiIconGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+    
+    <!-- Accent Gradient for Text 'Ai' -->
+    <linearGradient id="aiTextGradDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+
+    <!-- Center Gradient Dark -->
+    <linearGradient id="centerTextGradDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+
+    <filter id="iconGlowDark" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#6366F1" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Group: Icon Mark -->
+  <g filter="url(#iconGlowDark)">
+    <!-- Squircle Container -->
+    <rect x="2" y="5" width="40" height="40" rx="11" fill="url(#aiIconGradDark)"/>
+    <rect x="2.5" y="5.5" width="39" height="39" rx="10.5" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
+    
+    <!-- Left Chevron '<' -->
+    <path d="M15 17L9 25L15 33" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Right Chevron '>' -->
+    <path d="M29 17L35 25L29 33" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Central Code Slash '/' with Neural Core -->
+    <path d="M24.5 16L19.5 34" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="22" cy="25" r="3.2" fill="#FFFFFF"/>
+    <circle cx="22" cy="25" r="1.6" fill="#4F46E5"/>
+  </g>
+
+  <!-- Typography: AiCodeCenter -->
+  <g transform="translate(52, 0)">
+    <!-- Main Title: Crisp White for Code on dark background -->
+    <text x="0" y="29" font-family="'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="22" letter-spacing="-0.4">
+      <tspan fill="url(#aiTextGradDark)">Ai</tspan><tspan fill="#F8FAFC">Code</tspan><tspan fill="url(#centerTextGradDark)">Center</tspan>
+    </text>
+    
+    <!-- Subtitle: TECHNOLOGIES -->
+    <text x="1" y="42" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="8.5" fill="#94A3B8" letter-spacing="3.2">TECHNOLOGIES</text>
+  </g>
+</svg>

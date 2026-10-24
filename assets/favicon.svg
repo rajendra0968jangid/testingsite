@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <linearGradient id="favGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="50%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <filter id="favGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#4F46E5" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#favGrad)" filter="url(#favGlow)"/>
+  <rect x="4.5" y="4.5" width="55" height="55" rx="15.5" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  
+  <!-- Chevrons and Neural Code Mark -->
+  <path d="M22 21L13 32L22 43" stroke="#38BDF8" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M42 21L51 32L42 43" stroke="#C084FC" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M35.5 19L28.5 45" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round"/>
+  <circle cx="32" cy="32" r="4.5" fill="#FFFFFF"/>
+  <circle cx="32" cy="32" r="2.2" fill="#4F46E5"/>
+</svg>
