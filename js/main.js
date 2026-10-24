@@ -65,49 +65,49 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 5. Application Modal Management
-  const modalOverlay = document.getElementById('applicationModal');
-  const openModalBtns = document.querySelectorAll('.open-apply-modal');
-  const closeModalBtn = document.getElementById('closeModalBtn');
-  const domainSelect = document.getElementById('modalDomainSelect');
+  // const modalOverlay = document.getElementById('applicationModal');
+  // const openModalBtns = document.querySelectorAll('.open-apply-modal');
+  // const closeModalBtn = document.getElementById('closeModalBtn');
+  // const domainSelect = document.getElementById('modalDomainSelect');
 
-  openModalBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const preselect = btn.getAttribute('data-domain');
-      if (preselect && domainSelect) {
-        domainSelect.value = preselect;
-      }
-      if (modalOverlay) {
-        modalOverlay.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      }
-    });
-  });
+  // openModalBtns.forEach(btn => {
+  //   btn.addEventListener('click', (e) => {
+  //     e.preventDefault();
+  //     const preselect = btn.getAttribute('data-domain');
+  //     if (preselect && domainSelect) {
+  //       domainSelect.value = preselect;
+  //     }
+  //     if (modalOverlay) {
+  //       modalOverlay.classList.add('active');
+  //       document.body.style.overflow = 'hidden';
+  //     }
+  //   });
+  // });
 
-  function closeModal() {
-    if (modalOverlay) {
-      modalOverlay.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-  }
+  // function closeModal() {
+  //   if (modalOverlay) {
+  //     modalOverlay.classList.remove('active');
+  //     document.body.style.overflow = '';
+  //   }
+  // }
 
-  if (closeModalBtn) {
-    closeModalBtn.addEventListener('click', closeModal);
-  }
+  // if (closeModalBtn) {
+  //   closeModalBtn.addEventListener('click', closeModal);
+  // }
 
-  if (modalOverlay) {
-    modalOverlay.addEventListener('click', (e) => {
-      if (e.target === modalOverlay) {
-        closeModal();
-      }
-    });
-  }
+  // if (modalOverlay) {
+  //   modalOverlay.addEventListener('click', (e) => {
+  //     if (e.target === modalOverlay) {
+  //       closeModal();
+  //     }
+  //   });
+  // }
 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modalOverlay && modalOverlay.classList.contains('active')) {
-      closeModal();
-    }
-  });
+  // document.addEventListener('keydown', (e) => {
+  //   if (e.key === 'Escape' && modalOverlay && modalOverlay.classList.contains('active')) {
+  //     closeModal();
+  //   }
+  // });
 
   // 6. Application Form Submission & Toast
   const applyForm = document.getElementById('applyForm');
